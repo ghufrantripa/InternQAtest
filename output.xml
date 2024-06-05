@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-05T09:33:36.701597" rpa="false" schemaversion="5">
+<suite id="s1" name="Regis" source="C:\Users\ASUS\Documents\BelajarPython\regis.robot">
+<test id="s1-t1" name="Valid Registration" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:37.014118" level="INFO">Opening browser 'chrome' to base url 'https://thermos.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T09:33:37.014118" elapsed="4.156982"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T09:33:41.172128" elapsed="0.084222"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:41.257070" level="INFO">Clicking element 'xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]'.</msg>
+<arg>xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:41.257070" elapsed="4.513085"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:45.770155" level="INFO">Clicking element 'xpath=//a[@id='customer_register_link']'.</msg>
+<arg>xpath=//a[@id='customer_register_link']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:45.770155" elapsed="2.432932"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:48.204114" level="INFO">Typing text 'Tono' into text field 'xpath=//input[@id='FirstName']'.</msg>
+<arg>xpath=//input[@id='FirstName']</arg>
+<arg>Tono</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:48.204114" elapsed="0.129819"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:48.333933" level="INFO">Typing text 'tono@example.com' into text field 'xpath=//input[@id='Email']'.</msg>
+<arg>xpath=//input[@id='Email']</arg>
+<arg>tono@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:48.333933" elapsed="0.110164"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:48.444097" level="INFO">Typing text '0812345678' into text field 'xpath=//input[@id='Phone']'.</msg>
+<arg>xpath=//input[@id='Phone']</arg>
+<arg>0812345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:48.444097" elapsed="0.187618"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:48.631715" level="INFO">Typing text 'Password1' into text field 'xpath=//input[@id='CreatePassword']'.</msg>
+<arg>xpath=//input[@id='CreatePassword']</arg>
+<arg>Password1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:48.631715" elapsed="0.097342"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:48.729057" level="INFO">Typing text 'Password1' into text field 'xpath=//input[@name='customer[password_confirmation]']'.</msg>
+<arg>xpath=//input[@name='customer[password_confirmation]']</arg>
+<arg>Password1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:48.729057" elapsed="0.102742"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:48.831799" level="INFO">Clicking button 'xpath=//button[contains(text(),'CREATE AN ACCOUNT')]'.</msg>
+<arg>xpath=//button[contains(text(),'CREATE AN ACCOUNT')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:48.831799" elapsed="0.513208"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-05T09:33:49.345007" elapsed="2.220544"/>
+</kw>
+<doc>Test valid registration scenario</doc>
+<status status="PASS" start="2024-06-05T09:33:37.014118" elapsed="14.551433"/>
+</test>
+<test id="s1-t2" name="Invalid Email Format" line="29">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:51.565551" level="INFO">Opening browser 'chrome' to base url 'https://thermos.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T09:33:51.565551" elapsed="3.828336"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T09:33:55.394922" elapsed="0.069230"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:55.464152" level="INFO">Clicking element 'xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]'.</msg>
+<arg>xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:55.464152" elapsed="4.296000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:33:59.760152" level="INFO">Clicking element 'xpath=//a[@id='customer_register_link']'.</msg>
+<arg>xpath=//a[@id='customer_register_link']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:33:59.760152" elapsed="2.264225"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:02.025403" level="INFO">Typing text 'Tono' into text field 'xpath=//input[@id='FirstName']'.</msg>
+<arg>xpath=//input[@id='FirstName']</arg>
+<arg>Tono</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:02.025403" elapsed="0.129868"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:02.155271" level="INFO">Typing text 'tono@com' into text field 'xpath=//input[@id='Email']'.</msg>
+<arg>xpath=//input[@id='Email']</arg>
+<arg>tono@com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:02.155271" elapsed="0.110516"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:02.265787" level="INFO">Typing text '0812345678' into text field 'xpath=//input[@id='Phone']'.</msg>
+<arg>xpath=//input[@id='Phone']</arg>
+<arg>0812345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:02.265787" elapsed="0.148944"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:02.414731" level="INFO">Typing text 'Password1' into text field 'xpath=//input[@id='CreatePassword']'.</msg>
+<arg>xpath=//input[@id='CreatePassword']</arg>
+<arg>Password1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:02.414731" elapsed="0.100566"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:02.515297" level="INFO">Typing text 'Password1' into text field 'xpath=//input[@name='customer[password_confirmation]']'.</msg>
+<arg>xpath=//input[@name='customer[password_confirmation]']</arg>
+<arg>Password1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:02.515297" elapsed="0.112581"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:02.627878" level="INFO">Clicking button 'xpath=//button[contains(text(),'CREATE AN ACCOUNT')]'.</msg>
+<arg>xpath=//button[contains(text(),'CREATE AN ACCOUNT')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:02.627878" elapsed="0.540016"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:08.458587" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-05T09:34:08.458587" level="FAIL">Element 'xpath=//div[@class='errors']//li[contains(text(),'Email is invalid.')]' did not appear in 5 seconds.</msg>
+<arg>xpath=//div[@class='errors']//li[contains(text(),'Email is invalid.')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2024-06-05T09:34:03.167894" elapsed="5.292432">Element 'xpath=//div[@class='errors']//li[contains(text(),'Email is invalid.')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-06-05T09:34:08.460326" elapsed="0.000000"/>
+</kw>
+<doc>Test invalid email format scenario</doc>
+<status status="FAIL" start="2024-06-05T09:33:51.565551" elapsed="16.894775">Element 'xpath=//div[@class='errors']//li[contains(text(),'Email is invalid.')]' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t3" name="Password Mismatch" line="44">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:08.460326" level="INFO">Opening browser 'chrome' to base url 'https://thermos.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T09:34:08.460326" elapsed="3.936357"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T09:34:12.396683" elapsed="0.064686"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:12.461369" level="INFO">Clicking element 'xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]'.</msg>
+<arg>xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:12.461369" elapsed="3.414611"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:15.877008" level="INFO">Clicking element 'xpath=//a[@id='customer_register_link']'.</msg>
+<arg>xpath=//a[@id='customer_register_link']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:15.877008" elapsed="3.917084"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:19.795094" level="INFO">Typing text 'Tono' into text field 'xpath=//input[@id='FirstName']'.</msg>
+<arg>xpath=//input[@id='FirstName']</arg>
+<arg>Tono</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:19.795094" elapsed="0.126606"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:19.922705" level="INFO">Typing text 'tono@example.com' into text field 'xpath=//input[@id='Email']'.</msg>
+<arg>xpath=//input[@id='Email']</arg>
+<arg>tono@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:19.922705" elapsed="0.141201"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:20.063906" level="INFO">Typing text '0812345678' into text field 'xpath=//input[@id='Phone']'.</msg>
+<arg>xpath=//input[@id='Phone']</arg>
+<arg>0812345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:20.063906" elapsed="0.171823"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:20.235729" level="INFO">Typing text 'Password1' into text field 'xpath=//input[@id='CreatePassword']'.</msg>
+<arg>xpath=//input[@id='CreatePassword']</arg>
+<arg>Password1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:20.235729" elapsed="0.135367"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:20.372097" level="INFO">Typing text 'Password11' into text field 'xpath=//input[@name='customer[password_confirmation]']'.</msg>
+<arg>xpath=//input[@name='customer[password_confirmation]']</arg>
+<arg>Password11</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:20.372097" elapsed="0.092229"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:20.464326" level="INFO">Clicking button 'xpath=//button[contains(text(),'CREATE AN ACCOUNT')]'.</msg>
+<arg>xpath=//button[contains(text(),'CREATE AN ACCOUNT')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:20.464326" elapsed="0.126450"/>
+</kw>
+<kw name="Wait Until Alert Is Present">
+<msg time="2024-06-05T09:34:20.592828" level="FAIL">No keyword with name 'Wait Until Alert Is Present' found.</msg>
+<status status="FAIL" start="2024-06-05T09:34:20.592828" elapsed="0.000000">No keyword with name 'Wait Until Alert Is Present' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-06-05T09:34:20.592828" elapsed="0.000000"/>
+</kw>
+<doc>Test password mismatch scenario</doc>
+<status status="FAIL" start="2024-06-05T09:34:08.460326" elapsed="12.132502">No keyword with name 'Wait Until Alert Is Present' found.</status>
+</test>
+<test id="s1-t4" name="Empty Required Fields" line="59">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:20.593860" level="INFO">Opening browser 'chrome' to base url 'https://thermos.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T09:34:20.593860" elapsed="3.947939"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T09:34:24.541799" elapsed="0.085492"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:24.628283" level="INFO">Clicking element 'xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]'.</msg>
+<arg>xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:24.627291" elapsed="4.352825"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:28.980116" level="INFO">Clicking element 'xpath=//a[@id='customer_register_link']'.</msg>
+<arg>xpath=//a[@id='customer_register_link']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:28.980116" elapsed="2.389960"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:31.370994" level="INFO">Clicking button 'xpath=//button[contains(text(),'CREATE AN ACCOUNT')]'.</msg>
+<arg>xpath=//button[contains(text(),'CREATE AN ACCOUNT')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:31.370076" elapsed="0.709011"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:37.258631" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-05T09:34:37.258631" level="FAIL">Element 'xpath=//div[@class='errors']//li[contains(text(),"Password can't be blank.")]' did not appear in 5 seconds.</msg>
+<arg>xpath=//div[@class='errors']//li[contains(text(),"Password can't be blank.")]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2024-06-05T09:34:32.079087" elapsed="5.194560">Element 'xpath=//div[@class='errors']//li[contains(text(),"Password can't be blank.")]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//div[@class='errors']//li[contains(text(),"Email can't be blank.")]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-06-05T09:34:37.273647" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-06-05T09:34:37.273647" elapsed="0.000000"/>
+</kw>
+<doc>Test empty required fields scenario</doc>
+<status status="FAIL" start="2024-06-05T09:34:20.592828" elapsed="16.680819">Element 'xpath=//div[@class='errors']//li[contains(text(),"Password can't be blank.")]' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t5" name="Password Criteria Not Met" line="70">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:37.273647" level="INFO">Opening browser 'chrome' to base url 'https://thermos.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T09:34:37.273647" elapsed="4.170486"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T09:34:41.444133" elapsed="0.122950"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:41.567083" level="INFO">Clicking element 'xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]'.</msg>
+<arg>xpath=//a[@class='site-nav__link site-nav__link--icon small--hide' and contains(.,'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:41.567083" elapsed="4.316037"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:45.884265" level="INFO">Clicking element 'xpath=//a[@id='customer_register_link']'.</msg>
+<arg>xpath=//a[@id='customer_register_link']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:45.884265" elapsed="2.236840"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:48.121105" level="INFO">Typing text 'Tono' into text field 'xpath=//input[@id='FirstName']'.</msg>
+<arg>xpath=//input[@id='FirstName']</arg>
+<arg>Tono</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:48.121105" elapsed="0.124075"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:48.245723" level="INFO">Typing text 'tono1@example.com' into text field 'xpath=//input[@id='Email']'.</msg>
+<arg>xpath=//input[@id='Email']</arg>
+<arg>tono1@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:48.245180" elapsed="0.134443"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:48.380322" level="INFO">Typing text '0812345678' into text field 'xpath=//input[@id='Phone']'.</msg>
+<arg>xpath=//input[@id='Phone']</arg>
+<arg>0812345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:48.379623" elapsed="0.186280"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:48.566905" level="INFO">Typing text 'pass' into text field 'xpath=//input[@id='CreatePassword']'.</msg>
+<arg>xpath=//input[@id='CreatePassword']</arg>
+<arg>pass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:48.565903" elapsed="0.120731"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:48.687636" level="INFO">Typing text 'pass' into text field 'xpath=//input[@name='customer[password_confirmation]']'.</msg>
+<arg>xpath=//input[@name='customer[password_confirmation]']</arg>
+<arg>pass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:48.686634" elapsed="0.129055"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:48.815689" level="INFO">Clicking button 'xpath=//button[contains(text(),'CREATE AN ACCOUNT')]'.</msg>
+<arg>xpath=//button[contains(text(),'CREATE AN ACCOUNT')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T09:34:48.815689" elapsed="0.383964"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2024-06-05T09:34:54.326779" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-05T09:34:54.326779" level="FAIL">Element 'xpath=//div[@class='errors']//li[contains(text(),'Password is too short (minimum is 5 characters)')]' did not appear in 5 seconds.</msg>
+<arg>xpath=//div[@class='errors']//li[contains(text(),'Password is too short (minimum is 5 characters)')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2024-06-05T09:34:49.199653" elapsed="5.128225">Element 'xpath=//div[@class='errors']//li[contains(text(),'Password is too short (minimum is 5 characters)')]' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-06-05T09:34:54.327878" elapsed="0.000000"/>
+</kw>
+<doc>Test password criteria not met scenario</doc>
+<status status="FAIL" start="2024-06-05T09:34:37.273647" elapsed="17.054231">Element 'xpath=//div[@class='errors']//li[contains(text(),'Password is too short (minimum is 5 characters)')]' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2024-06-05T09:33:36.701597" elapsed="77.626281"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="4" skip="0" id="s1" name="Regis">Regis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
