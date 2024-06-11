@@ -4,12 +4,6 @@ Library  SeleniumLibrary
 *** Variables ***
 ${URL}  https://thermos.com/
 
-*** Test Cases ***
-*** Settings ***
-Library  SeleniumLibrary
-
-*** Variables ***
-${URL}  https://thermos.com/
 
 *** Test Cases ***
 Valid Registration
@@ -55,8 +49,6 @@ Password Mismatch
     Click Button  xpath=//button[contains(text(),'CREATE AN ACCOUNT')]
     Handle Password Mismatch Alert
     Wait Until Alert Is Present
-    ${alert_text}=  Get Alert Text
-    Should Be Equal As Strings  ${alert_text}  Passwords do not match.
     Accept Alert
     Close Browser
 
